@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Forms</title>
+</head>
+<body>
+    <h2>Login Form</h2>
+    <form action="/submit_login" method="post">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" required><br><br>
+        
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        <input type="submit" value="Login">
+    </form>
+    <hr>
+
+    <h2>Registration Form</h2>
+    <form action="/submit_registration" method="post">
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname" required><br><br>
+        
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        <input type="submit" value="Register">
+    </form>
+    <hr>
+
+    <h2>Internship Application Form</h2>
+    <form action="/submit_internship" method="post">
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+        
+        <label for="college">College Name:</label><br>
+        <input type="text" id="college" name="college" required><br><br>
+        
+        <label for="resume">Upload Resume:</label><br>
+        <input type="file" id="resume" name="resume" required><br><br>
+        
+        <input type="submit" value="Apply">
+    </form>
+    <hr>
+
+    <h2>Counseling Form</h2>
+    <form action="/submit_counseling" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+        
+        <label for="problem">Problem:</label><br>
+        <textarea id="problem" name="problem" rows="4" cols="50" required></textarea><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+    <hr>
+
+    <h2>Event Registration Form</h2>
+    <form action="/submit_event_registration" method="post">
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="event">Event:</label><br>
+        <input type="text" id="event" name="event" required><br><br>
+        
+        <label for="date">Event Date:</label><br>
+        <input type="date" id="date" name="date" required><br><br>
+        
+        <input type="submit" value="Register">
+    </form>
+    <hr>
+
+    <h2>Contact Us Form</h2>
+    <form action="/submit_contact" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="subject">Subject:</label><br>
+        <input type="text" id="subject" name="subject" required><br><br>
+        
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+        
+        <input type="submit" value="Send Message">
+    </form>
+    <hr>
+
+    <h2>Feedback Form</h2>
+    <form action="/submit_feedback" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="rating">Rating (1-5):</label><br>
+        <input type="number" id="rating" name="rating" min="1" max="5" required><br><br>
+        
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50" required></textarea><br><br>
+        
+        <input type="submit" value="Submit Feedback">
+    </form>
+    <hr>
+
+    <h2>Job Application Form</h2>
+    <form action="/submit_job_application" method="post">
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+        
+        <label for="position">Position Applying For:</label><br>
+        <input type="text" id="position" name="position" required><br><br>
+        
+        <label for="resume">Upload Resume:</label><br>
+        <input type="file" id="resume" name="resume" required><br><br>
+        
+        <input type="submit" value="Apply">
+    </form>
+    <hr>
+
+    <h2>Online Payment Form</h2>
+    <form action="/submit_payment" method="post">
+        <label for="name">Name on Card:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="card_number">Card Number:</label><br>
+        <input type="text" id="card_number" name="card_number" required><br><br>
+        
+        <label for="expiry_date">Expiry Date:</label><br>
+        <input type="text" id="expiry_date" name="expiry_date" placeholder="MM/YY" required><br><br>
+        
+        <label for="cvv">CVV:</label><br>
+        <input type="text" id="cvv" name="cvv" required><br><br>
+        
+        <label for="amount">Amount:</label><br>
+        <input type="number" id="amount" name="amount" required><br><br>
+        
+        <input type="submit" value="Pay Now">
+    </form>
+    <hr>
+
+    <h2>Course Enrollment Form</h2>
+    <form action="/submit_enrollment" method="post">
+        <label for="student_name">Student Name:</label><br>
+        <input type="text" id="student_name" name="student_name" required><br><br>
+        
+        <label for="student_id">Student ID:</label><br>
+        <input type="text" id="student_id" name="student_id" required><br><br>
+        
+        <label for="course_name">Course Name:</label><br>
+        <input type="text" id="course_name" name="course_name" required><br><br>
+        
+        <label for="semester">Semester:</label><br>
+        <input type="text" id="semester" name="semester" required><br><br>
+        
+        <input type="submit" value="Enroll">
+    </form>
+    <hr>
+
+    <h2>Hotel Booking Form</h2>
+    <form action="/submit_booking" method="post">
+        <label for="full_name">Full Name:</label><br>
+        <input type="text" id="full_name" name="full_name" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="check_in">Check-In Date:</label><br>
+        <input type="date" id="check_in" name="check_in" required><br><br>
+        
+        <label for="check_out">Check-Out Date:</label><br>
+        <input type="date" id="check_out" name="check_out" required><br><br>
+        
+        <label for="room_type">Room Type:</label><br>
+        <input type="radio" id="single" name="room_type" value="single" required>
+        <label for="single">Single Room</label><br>
+        <input type="radio" id="double" name="room_type" value="double" required>
+        <label for="double">Double Room</label><br>
+        <input type="radio" id="suite" name="room_type" value="suite" required>
+        <label for="suite">Suite</label><br><br>
+
+        <input type="submit" value="Book Now">
+    </form>
+    <hr>
+
+    <h2>Library Membership Form</h2>
+    <form action="/submit_membership" method="post">
+        <label for="full_name">Full Name:</label><br>
+        <input type="text" id="full_name" name="full_name" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+        
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="3" cols="50" required></textarea><br><br>
+        
+        <label for="membership_type">Membership Type:</label><br>
+        <select id="membership_type" name="membership_type" required>
+            <option value="student">Student</option>
+            <option value="faculty">Faculty</option>
+            <option value="public">Public</option>
+        </select><br><br>
+        
+        <input type="submit" value="Apply for Membership">
+    </form>
+    <hr>
+
+    <h2>Workshop Registration Form</h2>
+    <form action="/submit_workshop" method="post">
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="workshop">Workshop Title:</label><br>
+        <input type="text" id="workshop" name="workshop" required><br><br>
+        
+        <label for="date">Workshop Date:</label><br>
+        <input type="date" id="date" name="date" required><br><br>
+        
+        <input type="submit" value="Register">
+    </form>
+    <hr>
+
+    <h2>Conference Registration Form</h2>
+    <form action="/submit_conference" method="post">
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+        
+        <label for="conference">Conference Title:</label><br>
+        <input type="text" id="conference" name="conference" required><br><br>
+        
+        <label for="date">Conference Date:</label><br>
+        <input type="date" id="date" name="date" required><br><br>
+        
+        <input type="submit" value="Register">
+    </form>
+    <hr>
+
+    <h2>Donation Form</h2>
+    <form action="/submit_donation" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+        
+        <label for="amount">Donation Amount:</label><br>
+        <input type="number" id="amount" name="amount" required><br><br>
+        
+        <label for="payment_method">Payment Method:</label><br>
+        <select id="payment_method" name="payment_method" required>
+            <option value="credit_card">Credit Card</option>
+            <option value="debit_card">Debit Card</option>
+            <option value="paypal">PayPal</option>
+        </select><br><br>
+        
+        <input type="submit" value="Donate">
+    </form>
+    <hr>
+</body>
+</html>
+
+       
